@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./icon/cat.ico" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/index/index.css')}}">
+    <title>VincentLily</title>
+</head>
+
+<div class="load">Loading...</div>
+
+<body>
+    <div class="containerF">
+        <nav>
+            <div class="container">
+                <h1>VincentLily</h1>
+        
+                <div class="menu">
+                    <a href="#Home" class="aa is-active">Home</a>
+                    <a href="#BirthdayCard" class="dd">Card</a>
+                    <a href="#Highlights" class="bb">Highlights</a>
+                    <a href="#Theme" class="cc">Theme</a>
+                    <a href="#contact-information" class="ee">FollowUs</a>
+                </div>
+            
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    
+        <div class="container2">
+            <div class="menu2">
+                <div class="box"><a href="#Home" class="aa2 is-active">Home</a></div>
+                <div class="box"><a href="#BirthdayCard" class="dd2">Card</a></div>
+                <div class="box"><a href="#Highlights" class="bb2">Highlights</a></div>
+                <div class="box"><a href="#Theme" class="cc2">Theme</a></div>
+                <div class="box"><a href="#contact-information" class="ee2">FollowUs</a></div>
+            </div>
+        </div>
+    
+        <section class="sec1" id="Home">
+            <main>
+                <blockquote>
+                    <h1> Vincent&Lily's Historical Place. </h1>
+                    <footer>
+                      <cite>
+                        2018--11--03
+                      </cite>
+                    </footer>
+                  </blockquote>
+            </main>   
+        </section>
+    
+        <section class="sec2" id="BirthdayCard">
+            <a href="#Home" class="birthdayCard">
+                <div class="cardFront">
+                    <h3 class="happy">HAPPY BIRTHDAY!</h3>
+                    <div class="balloons">
+                        <div class="balloon"></div>
+                        <div class="balloon"></div>
+                        <div class="balloon"></div>
+                        <div class="balloon"></div>
+                    </div>
+                </div>
+    
+                <div class="cardInside">
+                    <h3 class="back">HAPPY BIRTHDAY!</h3>
+                    <p>Dear Lily, </p>
+                    <p>Happy Birthady! I hope your day filled with lots of love and laughter! May all of your birthday wishes come true!</p>
+                    <p class="name">Vincent</p>
+                </div>
+            </a>
+        </section>
+    
+        <div class="matte">
+            <div class="close"></div>
+            <div class="cardInsidebig">
+                <h3 class="title">HAPPY BIRTHDAY!</h3>
+                <p>Dear Lily, </p>
+                <p>Happy Birthady! I hope your day filled with lots of love and laughter! May all of your birthday wishes come true!</p>
+                <p class="name">Vincent</p>
+            </div>
+        </div>
+    
+        <section class="sec3" id="Highlights">
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide" id="img1"><img src="{{ url_for('static', filename='photo/slider/LINE_ALBUM_230117.jpg') }}"></div>
+                    <div class="slide" id="img1"><img src="{{ url_for('static', filename='photo/slider/LINE_ALBUM_230117_0.jpg') }}"></div>
+                    <div class="slide" id="img1"><img src="{{ url_for('static', filename='photo/slider/LINE_ALBUM_230117_1.jpg') }}"></div>
+                    <div class="slide" id="img1"><img src="{{ url_for('static', filename='photo/slider/LINE_ALBUM_230117_2.jpg') }}"></div>
+                    <div class="slide" id="img1"><img src="{{ url_for('static', filename='photo/slider/LINE_ALBUM_230117_3.jpg') }}"></div>
+                    <div class="slide" id="img1"><img src="{{ url_for('static', filename='photo/slider/LINE_ALBUM_230117_4.jpg') }}"></div>
+                    <div class="slide" id="img1"><img src="{{ url_for('static', filename='photo/slider/LINE_ALBUM_230117_5.jpg') }}"></div>
+                    <div class="slide" id="img1"><img src="{{ url_for('static', filename='photo/slider/bus.jpg') }}"></div>
+                    <div class="slide" id="img1"><img src="{{ url_for('static', filename='photo/slider/DWHS.jpg') }}"></div>
+                    
+
+                    <div class="slide" id="img1"><img src="{{ url_for('static', filename='photo/slider/LINE_ALBUM_230117.jpg') }}"></div>
+                    <div class="slide" id="img1"><img src="{{ url_for('static', filename='photo/slider/LINE_ALBUM_230117_0.jpg') }}"></div>
+                    <div class="slide" id="img1"><img src="{{ url_for('static', filename='photo/slider/LINE_ALBUM_230117_1.jpg') }}"></div>
+                    <div class="slide" id="img1"><img src="{{ url_for('static', filename='photo/slider/LINE_ALBUM_230117_2.jpg') }}"></div>
+                    <div class="slide" id="img1"><img src="{{ url_for('static', filename='photo/slider/LINE_ALBUM_230117_3.jpg') }}"></div>
+                    <div class="slide" id="img1"><img src="{{ url_for('static', filename='photo/slider/LINE_ALBUM_230117_4.jpg') }}"></div>
+                    <div class="slide" id="img1"><img src="{{ url_for('static', filename='photo/slider/LINE_ALBUM_230117_5.jpg') }}"></div>
+                    <div class="slide" id="img1"><img src="{{ url_for('static', filename='photo/slider/bus.jpg') }}"></div>
+                    <div class="slide" id="img1"><img src="{{ url_for('static', filename='photo/slider/DWHS.jpg') }}"></div>
+            </div>
+        </section>
+    
+        <section class="sec4"><div class="bg"></div></section>
+    
+        <section class="sec5" id="Theme">
+            <div class="timeline">
+                <ul>
+                    <li>
+                        <a href="./photo-studio/record.html">            
+                            <div class="timeline-photo" id="img10">
+                                <img src="{{url_for('static', filename='photo/2023:01--/LINE_ALBUM_230115.jpg')}}" alt="study">
+                            </div>        
+                            <div class="timeline-content">
+                                <h1>2023/01/--record</h1>
+                            </div>
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="">
+                            <div class="timeline-photo" id="img11">
+                                <img src="{{url_for('static', filename='photo/2022-12/LINE_ALBUM_221231_63.jpg')}}" alt="勤美廣場合照">
+                            </div> 
+                            <div class="timeline-content">
+                                <h1>2022/12/--勤美</h1>
+                            </div>
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="">
+                            <div class="timeline-photo" id="img12">
+                                <img src="{{url_for('static', filename='photo/2022-Vincent\'s-HBD/LINE_ALBUM_230101.jpg')}}" alt="台中美術館前合照">                                
+                            </div>
+                            <div class="timeline-content">
+                                <h1>2022/09/13 Vincent HBD</h1>
+                            </div>
+                        </a>        
+                    </li>
+    
+                    <li>
+                        <a href="">
+                            <div class="timeline-photo" id="img13">
+                                <img src="{{url_for('static', filename='photo/2022-8-28-cuthair/LINE_ALBUM_230101_0.jpg')}}" alt="高鐵上合照">
+                            </div>
+
+                            <div class="timeline-content">
+                                <h1>2022/08/28 高雄剪髮</h1>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <div class="timeline-photo" id="img14">
+                                <img src="{{url_for('static', filename='photo/2022-7-21-climbmountain/LINE_ALBUM_221231_0.jpg')}}" alt="山上合照">
+                            </div>
+
+                            <div class="timeline-content">
+                                <h1>2022/07/21 梅嶺爬山</h1>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <div class="timeline-photo" id="img15">
+                                <img src="{{url_for('static', filename='photo/2022:06:16 關夕平台/LINE_ALBUM_230101_25.jpg')}}" alt="海邊河堤旁合照">
+                            </div>
+                            
+                            <div class="timeline-content">
+                                <h1>2022/06/16 關夕平台</h1>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <div class="timeline-photo" id="img16">
+                                <img src="{{url_for('static', filename='photo/2022:06:01 高中畢業/LINE_ALBUM_230101_1.jpg')}}" alt="高中畢業合照">
+                            </div>
+
+                            <div class="timeline-content">
+                                <h1>2022/06/01 高中畢業</h1>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <div class="timeline-photo" id="img17">
+                                <img src="{{url_for('static', filename='photo/大雜燴EP1/LINE_ALBUM_230116.jpg')}}" alt="大雜燴EP1">
+                            </div>
+
+                            <div class="timeline-content">
+                                <h1>隨便拍大雜燴 EP1</h1>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <div class="timeline-photo" id="img18">
+                                <img src="{{url_for('static', filename='photo/大雜燴EP2/LINE_ALBUM_230116_0.jpg')}}" alt="大雜燴EP2">
+                            </div>
+
+                            <div class="timeline-content">
+                                <h1>隨便拍大雜燴 EP2</h1>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <div class="timeline-photo" id="img19">
+                                <img src="{{url_for('static', filename='photo/大雜燴EP3/LINE_ALBUM_230116.jpg')}}" alt="大雜燴EP3">
+                            </div>
+
+                            <div class="timeline-content">
+                                <h1>隨便拍大雜燴 EP3</h1>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <div class="timeline-photo" id="img20">
+                                <img src="{{url_for('static', filename='photo/孔廟/LINE_ALBUM_230116_0.jpg')}}" alt="孔廟合照">
+                            </div>
+
+                            <div class="timeline-content">
+                                <h1>2021/04/10 孔廟</h1>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <div class="timeline-photo" id="img21">
+                                <img src="{{url_for('static', filename='photo/高中畢旅六福村/LINE_ALBUM_230116.jpg')}}" alt="六福村合照">
+                            </div>
+
+                            <div class="timeline-content">
+                                <h1>2021/04/09 高中畢業旅行六福村</h1>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <div class="timeline-photo" id="img22">
+                                <img src="{{url_for('static', filename='photo/台南新總圖/LINE_ALBUM_230116_0.jpg')}}" alt="台南新總圖影子照">
+                            </div>
+
+                            <div class="timeline-content">
+                                <h1>2021/02/05 台南新總圖</h1>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <div class="timeline-photo" id="img23">
+                                <img src="{{url_for('static', filename='photo/高二運動會/LINE_ALBUM_230116.jpg')}}" alt="操場上合照">
+                            </div>
+
+                            <div class="timeline-content">
+                                <h1>2020/12/19 高二運動會</h1>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <div class="timeline-photo" id="img24">
+                                <img src="{{url_for('static', filename='photo/台北/咖啡店.jpg')}}" alt="咖啡店">
+                            </div>
+
+                            <div class="timeline-content">
+                                <h1>2020/08/04 台北</h1>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <div class="timeline-photo" id="img25">
+                                <img src="{{url_for('static', filename='photo/台灣大學/台灣大學 跳跳跳.jpg')}}" alt="台灣大學跳跳跳">
+                            </div>
+
+                            <div class="timeline-content">
+                                <h1>2020/08/02 台灣大學</h1>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <div class="timeline-photo" id="img26">
+                                <img src="{{url_for('static', filename='photo/奇美博物館/LINE_ALBUM_230116_0.jpg')}}" alt="奇美博物館合照">
+                            </div>
+
+                            <div class="timeline-content">
+                                <h1>2020/02/24 奇美博物館</h1>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    
+        <section class="sec6" id="contact-information">
+            <div class="contact">
+                <a href="tel:+886-970832213"><img src="{{ url_for('static', filename='icon/contact/whatsapp-black.ico')}}"></a>
+                <a href="mailto:mengxian0913@gmail.com"><img src="{{url_for('static', filename='icon/contact/gmail-black.ico')}}" alt="mail"></a>
+                <a href="https://www.instagram.com/meng_337/" target="_blank"><img src="{{url_for('static', filename='icon/contact/instagram-black.ico')}}" alt="ins-Vincent"></a>
+                <a href="https://www.instagram.com/liilii__122/" target="_blank"><img src="{{url_for('static', filename='icon/contact/instagram-pink.ico')}}" alt="ins-Lily"></a>           
+            </div>
+    
+            <div class="maker">
+                <p>copyright © 2022-2023, Meng-Xian, Yang. All rights reserved.</p>
+            </div>
+        </section>
+    </div>
+</body>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</html>

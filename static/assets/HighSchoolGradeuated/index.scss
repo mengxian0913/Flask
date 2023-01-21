@@ -1,0 +1,27 @@
+html{
+    height: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'cwTeXFangSong', serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+@mixin bgsetting($width, $height, $bg, $att, $rep, $size){
+    width: $width;
+    height: $height;
+    background: $bg;
+    background-size: $size;
+    background-attachment: $att;
+    background-repeat: $rep;
+}
+
+:root
+{
+    overflow-x: hidden;
+    @include bgsetting(20vw, 100vh, url(../../photo/snowflakes-background4.png), relative, repeat, contain);
+}
+
