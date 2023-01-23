@@ -43,4 +43,30 @@ show_upload_container.addEventListener('click', function(){
 
 
 /*pypyphph*/
-console.log(imgUrls);
+
+const http = "https"
+img_data += "gggggg";
+
+var imgs=[];
+
+for(let i=0;i<img_data.length-5;i++){
+    let tmp = img_data[i] + img_data[i+1] + img_data[i+2] + img_data[i+3] + img_data[i+4];
+    if(tmp == http){
+        let now="";
+        while(img_data[i] != '&' && img_data[i+1] != '#'){
+            now = now + img_data[i];
+            i++;
+        }
+        imgs.push(now);
+    }
+}
+
+
+console.log(imgs.length);
+
+for(let i=0;i<imgs.length;i++){
+    console.log(imgs[i]);
+    var img = document.createElement("img");
+    img.setAttribute("src", imgs[i]);
+    photo_place.appendChild(img);
+}

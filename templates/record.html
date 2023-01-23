@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2023-01--record</title>
-    <link rel="stylesheet" href="../assets/record/record.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/record/record.css')}}">
+    <script>
+        var img_data = "{{imgs}}";
+        console.log(img_data);
+    </script>
+
 </head>
 <body>
     <div class="container">
@@ -19,7 +24,7 @@
                 <button type="button" id="submit-photo">submit</button>
                 <button type="button" id="cancel">cancel</button>    
             </div>
-            <div id="display-image"><img src="../photo/background-img/kitty.png" alt="image" id="image"></div>
+            <div id="display-image"><img src="{{url_for('static', filename='photo/background-img/kitty.png')}}" alt="image" id="image"></div>
         </div>
 
         <div class="photo-place">
@@ -30,5 +35,5 @@
     </div>
 
 </body> 
-    <script src="../js/record.js"></script>
+    <script src="{{url_for('static', filename='js/record.js')}}"></script>
 </html>

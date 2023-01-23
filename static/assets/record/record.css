@@ -92,4 +92,8 @@ nav .show-upload-container {
   width: 100vw;
   height: auto;
   padding: 0 20px;
+}
+.photo-place img {
+  width: 20vw;
+  height: auto;
 }/*# sourceMappingURL=record.css.map */
