@@ -19,7 +19,7 @@ from flask import render_template
 from flask import jsonify
 
 app = Flask(__name__)
-app = Flask(__name__, static_folder='static')
+#app = Flask(__name__, static_folder='static')
 
 @app.route('/')
 def index():
